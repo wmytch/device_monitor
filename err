@@ -1,0 +1,5 @@
+Makefile:23: client.d: No such file or directory
+Makefile:23: easylogging++.d: No such file or directory
+Makefile:23: ini.d: No such file or directory
+Makefile:23: ServerConfig.d: No such file or directory
+Makefile:23: log_client.d: No such file or directory
