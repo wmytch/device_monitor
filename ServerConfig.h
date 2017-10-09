@@ -17,6 +17,7 @@ class CServerConfig {
 	void GetConfigFromFile();
 
 	int GetClientNum(){return m_client_num;}
+	int GetHeartBeat(){return m_heart_beat;}
 
 	const string &GetProxyProto(){return m_proxy_proto;}
     const string &GetProxyIP(){return m_proxy_ip;}
@@ -24,6 +25,7 @@ class CServerConfig {
 
 	const string &GetServerIP(){return m_server_ip;}
 	unsigned short GetServerPort(){return m_server_port;}
+
 
   private:
 	static CServerConfig s_ServerConfig;
@@ -37,5 +39,7 @@ class CServerConfig {
 	string m_server_ip;
 	unsigned short m_server_port;
 	int m_client_num;
+
+	int m_heart_beat;
 };
 #endif                          // __SERVER_CONFIG_H__

@@ -25,6 +25,7 @@ void CServerConfig::GetConfigFromFile()
     CIni ini;
     if (ini.OpenFile(m_file_path.c_str(), "r") == INI_SUCCESS) {
 		m_client_num=ini.GetInt("common","client_num");
+		m_heart_beat=ini.GetInt("common","heart_beat");
 
 		m_proxy_proto=ini.GetStr("log_proxy","proxy_proto");
         m_proxy_ip= ini.GetStr("log_proxy", "proxy_ip");

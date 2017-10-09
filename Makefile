@@ -12,8 +12,8 @@ CFLAGS=-g
 CPPFLAGS=-std=c++11
 LDFLAGS=
 
-OBJECTS=device_monitor.o easylogging++.o ini.o ServerConfig.o log_client.o 
-TARGET=device_monitor
+OBJECTS=device_func.o virtual_device.o easylogging++.o ini.o ServerConfig.o log_client.o 
+TARGET=virtual_device
 
 all:$(TARGET)
 
